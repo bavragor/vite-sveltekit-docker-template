@@ -1,6 +1,7 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { defineConfig } from 'vitest/config';
 import { svelteTesting } from '@testing-library/svelte/vite';
+import process from 'node:process';
 
 export default defineConfig({
   plugins: [svelte({ compilerOptions: { hmr: !process.env.VITEST } }), svelteTesting()],
