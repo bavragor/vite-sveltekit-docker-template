@@ -1,4 +1,5 @@
 import js from '@eslint/js';
+import node from 'eslint-plugin-n';
 import ts from 'typescript-eslint';
 import svelte from 'eslint-plugin-svelte';
 import prettier from 'eslint-config-prettier';
@@ -29,5 +30,13 @@ export default [
   },
   {
     ignores: ['build/', '.svelte-kit/', 'dist/'],
+  },
+  {
+    plugins: {
+      n: node,
+    },
+    rules: {
+      'n/prefer-global/process': ['error', 'never'],
+    },
   },
 ];

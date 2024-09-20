@@ -17,7 +17,7 @@
     "test:e2e": "playwright test",
     "lint": "pnpm run lint:base -- .",
     "lint:base": "eslint --cache --cache-location='node_modules/.cache/eslint/'",
-    "lint:fix": "pnpm run lint:base -- --fix .",
+    "lint:fix": "pnpm run lint:base --fix .",
     "prettier:base": "prettier",
     "prettier": "pnpm run prettier:base --write ."
   },
@@ -33,6 +33,7 @@
     "@vitest/coverage-istanbul": "^2.1.1",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-n": "^17.10.3",
     "eslint-plugin-svelte": "^2.36.0",
     "globals": "^15.0.0",
     "jsdom": "^25.0.0",
